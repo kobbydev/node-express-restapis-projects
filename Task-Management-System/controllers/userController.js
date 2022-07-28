@@ -8,6 +8,7 @@ export const createUser = (req, res) => {
 		fullName,
 		userName,
 		password,
+		tasks: [],
 	});
 	res.status(201).send({
 		message: 'User created successfully',
