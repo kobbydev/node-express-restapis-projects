@@ -37,7 +37,7 @@ router.beforeEach((to, from) => {
 	const token = localStorage.getItem('userIsLogged');
 	if (token) {
 		authenticated = true;
-		console.log(localStorage.getItem('userLogged'));
+		console.log(localStorage.getItem('userIsLogged'));
 	} else {
 		authenticated = false;
 	}

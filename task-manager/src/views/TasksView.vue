@@ -26,7 +26,7 @@
 								<input type="checkbox" class="checkbox-button" />
 							</td>
 							<td class="col-2">{{ task }}</td>
-							<td class="col-3">X</td>
+							<td class="col-3" @click="deleteTask(index)">X</td>
 						</tr>
 					</table>
 				</div>
@@ -65,7 +65,14 @@ export default {
 				})
 				.catch((error) => console.log(error));
 		},
-	},
+		deleteTask(index) {
+			axios
+				.delete(`http://localhost:8080/api/user/${this.userId}/task/taskId`)
+				.then((response) => {
+					console.log(response);
+					this.tasks.splice(index, 1);
+				});
+		},
 };
 </script>
 
