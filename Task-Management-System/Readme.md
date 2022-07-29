@@ -2,7 +2,7 @@
 
 ## General Info
 
-This project is to use and practise my skills in Node js, Express js and restApis. Building RestApis as backends to host a basic Task Management System.
+This project is to use and practise my skills in Node js, Express js and restApis. Building a RestApi as backend that can host a basic Task Management System.
 
 ## Technologies
 
